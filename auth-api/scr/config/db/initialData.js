@@ -12,6 +12,12 @@ export async function createInitialData(){
             email: "rafa.jo.souza@gmail.com",
             password: password,
         });
+
+        await User.create({
+            name: "Pedro",
+            email: "pedro@gmail.com",
+            password: password,
+        });
     } catch (error) {
         console.log(error);
     }
