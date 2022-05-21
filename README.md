@@ -122,9 +122,9 @@ Recieving message from queue: {"salesId":"6165b92addaf7fc9dd85dad0","status":"AP
 
 As 3 APIs foram publicadas no Heroku, o repositório que foram publicados são esses:
 
-* Auth-API    - 
-* Product-API - 
-* Sales-API   - 
+* Auth-API    - https://github.com/StringRafa/MicrosservicosRabbitMq/tree/main/auth-api
+* Product-API - https://github.com/StringRafa/MicrosservicosRabbitMq/tree/main/product-api
+* Sales-API   - https://github.com/StringRafa/MicrosservicosRabbitMq/tree/main/sales-api
 
 As URL base são:
 
