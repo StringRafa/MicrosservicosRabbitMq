@@ -3,8 +3,8 @@ package com.microsservice.productapi.dto;
 import lombok.Data;
 
 @Data
-public class CategoryRequest {
+public class SupplierRequest {
 
-	private String description;
+	private String name;
 	
 }

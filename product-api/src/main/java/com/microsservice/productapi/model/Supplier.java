@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.beans.BeanUtils;
+
+import com.microsservice.productapi.dto.SupplierRequest;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,4 +28,10 @@ public class Supplier {
 	
 	@Column(name = "NAME",  nullable = false)
 	private String name;
+	
+	public static Supplier of(SupplierRequest request) {
+		var supplier = new Supplier();
+		BeanUtils.copyProperties(request, supplier);
+		return supplier;
+	}
 }
